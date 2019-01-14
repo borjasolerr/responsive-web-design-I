@@ -77,8 +77,8 @@ h1, h2, h3, h4, h5 {
 
 .border {
 	height: 100px;
-	width: 90%;
-	border-bottom: 1px solid #000;
+    width: 100%;
+    border-bottom: 1px solid #000;
 }
 
 .header {
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5 {
 
 .footer {
 	height: 30%;
-	width: 85%;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -210,6 +210,10 @@ h1, h2, h3, h4, h5 {
 	height: 10px;
 	margin: 2%;
 	align-self: center;
+}
+
+.footer-paragraph {
+	padding-top: 1rem;
 }
 
 img {
@@ -245,4 +249,131 @@ img {
 	line-height: 1.5;
 }
 
+/* Media Queries */
 
+@media screen and (max-width: 800px) {
+	.container {
+		width: 100%;
+	}
+
+ 	.header {
+		width: 100%;
+	}
+	.header-nav-logo-mob {
+		display: block;
+	}
+
+ 	.header-nav-logo-link {
+		display: none;
+	}
+
+ 	.header-title {
+		width: 95%;
+	}
+
+ 	div.header-title-1 {
+		width: 85%;
+	}
+	div.header-title-2 {
+		display: none;
+	}
+
+ 	.header-title-1-contents h1 {
+		margin: 0 9%;
+		padding: 0 6.5rem;
+		font-size: 5.1rem;
+	}
+	.main {
+		width: 100%;
+	}
+
+ 	.main div {
+		width: 95%;
+	}
+
+ 	.main-middle {
+		display: inline-block;
+	}
+
+ 	div.main-middle {
+		margin: 0;
+	}
+
+ 	.main-bottom {
+		padding: 0 0 1rem 0;
+	}
+
+ 	.footer {
+		width: 95%;
+	}
+
+ 	.footer-item--1 {
+		margin: 15px 10px;
+	}
+
+ 	.footer-item--2 {
+		margin: 5%;
+	}
+}
+
+ @media screen and (max-width: 500px) {
+	.container {
+		margin: 0;
+		width: 100%;
+	}
+	.header {
+		width: 100%;
+	}
+
+ 	.header-nav {
+		flex-direction: column;
+	}
+
+ 	.header-nav-logo-mob .header-nav-logo {
+		padding: 1rem;
+	}
+	.header-nav-items {
+		flex-direction: column;
+		width: 100%;
+	}
+
+ 	.header-nav-items a {
+		color: #999;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid #999;
+		padding: 1rem;
+	}
+
+ 	.header-nav-items a:first-child {
+		border-top: 1px solid #999;
+	}
+
+ 	.header-title-1-contents h1 {
+		font-size: 4rem;
+		padding: 0 3.5rem;
+	}
+
+ 	div.header-title-1 {
+		width: 90%;
+	}
+	.main {
+		width: 92.4%;
+	}
+
+ 	.main div {
+		width: 100%;
+	}
+
+ 	.main-top {
+		flex-direction: column;
+	}
+
+ 	.main-bottom {
+		flex-direction: column;
+	}
+	.footer {
+		width: 90%;
+	}
+}
